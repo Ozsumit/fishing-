@@ -1,16 +1,23 @@
-"use client"
+"use client";
 
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
-import { Card } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Star, Heart, ShoppingCart, Truck, Shield, RotateCcw } from "lucide-react"
-import Link from "next/link"
-import { useState } from "react"
-import { useParams } from "next/navigation"
-import { useCart } from "@/contexts/cart-context"
-import { useUser } from "@/contexts/user-context"
-import { useRouter } from "next/navigation"
+import { Navigation } from "@/components/navigation";
+import { Footer } from "@/components/footer";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import {
+  Star,
+  Heart,
+  ShoppingCart,
+  Truck,
+  Shield,
+  RotateCcw,
+} from "lucide-react";
+import Link from "next/link";
+import { useState } from "react";
+import { useParams } from "next/navigation";
+import { useCart } from "@/contexts/cart-context";
+import { useUser } from "@/contexts/user-context";
+import { useRouter } from "next/navigation";
 
 const products: Record<string, any> = {
   "1": {
@@ -36,7 +43,11 @@ Key Features:
 
 Whether you're tackling trophy bass or deep-sea fishing, the Twin Power delivers the reliability and performance you need to land that catch of a lifetime.`,
     image: "/shimano-fishing-reel.jpg",
-    images: ["/shimano-fishing-reel.jpg", "/shimano-fishing-reel.jpg", "/shimano-fishing-reel.jpg"],
+    images: [
+      "/shimano-fishing-reel.jpg",
+      "/shimano-fishing-reel.jpg",
+      "/shimano-fishing-reel.jpg",
+    ],
     badge: "New",
     specs: {
       "Drag Type": "Carbon Fiber",
@@ -58,7 +69,8 @@ Whether you're tackling trophy bass or deep-sea fishing, the Twin Power delivers
     inStock: true,
     category: "Rods",
     sku: "GRAPH-PREM-2024",
-    description: "High-performance graphite fishing rod designed for precision casting and maximum sensitivity.",
+    description:
+      "High-performance graphite fishing rod designed for precision casting and maximum sensitivity.",
     longDescription: `Engineered with premium graphite composite material, this rod offers exceptional strength-to-weight ratio. Whether you're casting lures or fishing with live bait, this rod provides the sensitivity you need to detect even the slightest bite.`,
     image: "/fishing-rod-graphite.jpg",
     images: ["/fishing-rod-graphite.jpg", "/fishing-rod-graphite.jpg"],
@@ -73,18 +85,18 @@ Whether you're tackling trophy bass or deep-sea fishing, the Twin Power delivers
     },
     relatedProducts: [1, 4],
   },
-}
+};
 
 export default function ProductPage() {
-  const params = useParams()
-  const id = params.id as string
-  const product = products[id]
-  const [quantity, setQuantity] = useState(1)
-  const [selectedImage, setSelectedImage] = useState(0)
-  const { addToCart } = useCart()
-  const { isFavorite, toggleFavorite } = useUser()
-  const router = useRouter()
-  const [addedToCart, setAddedToCart] = useState(false)
+  const params = useParams();
+  const id = params.id as string;
+  const product = products[id];
+  const [quantity, setQuantity] = useState(1);
+  const [selectedImage, setSelectedImage] = useState(0);
+  const { addToCart } = useCart();
+  const { isFavorite, toggleFavorite } = useUser();
+  const router = useRouter();
+  const [addedToCart, setAddedToCart] = useState(false);
 
   if (!product) {
     return (
@@ -92,19 +104,26 @@ export default function ProductPage() {
         <Navigation />
         <div className="flex items-center justify-center min-h-[400px]">
           <div className="text-center">
-            <h1 className="text-3xl font-bold text-foreground mb-2">Product not found</h1>
-            <Link href="/shop" className="text-accent hover:text-accent/80 font-semibold">
+            <h1 className="text-3xl font-bold text-foreground mb-2">
+              Product not found
+            </h1>
+            <Link
+              href="/shop"
+              className="text-accent hover:text-accent/80 font-semibold"
+            >
               Back to shop
             </Link>
           </div>
         </div>
         <Footer />
       </div>
-    )
+    );
   }
 
-  const discount = Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
-  const isProductFavorite = isFavorite(product.id)
+  const discount = Math.round(
+    ((product.originalPrice - product.price) / product.originalPrice) * 100
+  );
+  const isProductFavorite = isFavorite(product.id);
 
   const handleAddToCart = () => {
     addToCart({
@@ -113,15 +132,15 @@ export default function ProductPage() {
       price: product.price,
       quantity,
       image: product.image,
-    })
-    setAddedToCart(true)
-    setTimeout(() => setAddedToCart(false), 2000)
-  }
+    });
+    setAddedToCart(true);
+    setTimeout(() => setAddedToCart(false), 2000);
+  };
 
   const handleBuyNow = () => {
-    handleAddToCart()
-    router.push("/cart")
-  }
+    handleAddToCart();
+    router.push("/cart");
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -138,7 +157,10 @@ export default function ProductPage() {
             Shop
           </Link>
           <span className="text-muted-foreground">/</span>
-          <Link href={`/category/${product.category.toLowerCase()}`} className="text-accent hover:text-accent/80">
+          <Link
+            href={`/category/${product.category.toLowerCase()}`}
+            className="text-accent hover:text-accent/80"
+          >
             {product.category}
           </Link>
           <span className="text-muted-foreground">/</span>
@@ -151,7 +173,9 @@ export default function ProductPage() {
             <div className="relative aspect-square mb-6 bg-muted rounded-lg overflow-hidden">
               <div
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-500"
-                style={{ backgroundImage: `url('${product.images[selectedImage]}')` }}
+                style={{
+                  backgroundImage: `url('${product.images[selectedImage]}')`,
+                }}
               />
               {product.badge && (
                 <div className="absolute top-4 left-4 px-4 py-2 bg-accent text-primary text-xs font-bold rounded-full shadow-lg">
@@ -174,7 +198,10 @@ export default function ProductPage() {
                     selectedImage === idx ? "border-accent" : "border-border"
                   }`}
                 >
-                  <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: `url('${img}')` }} />
+                  <div
+                    className="w-full h-full bg-cover bg-center"
+                    style={{ backgroundImage: `url('${img}')` }}
+                  />
                 </button>
               ))}
             </div>
@@ -185,16 +212,26 @@ export default function ProductPage() {
             <div className="mb-6">
               <div className="flex items-start justify-between gap-4 mb-4">
                 <div>
-                  <p className="text-sm text-muted-foreground mb-2 uppercase tracking-wide">{product.category}</p>
-                  <h1 className="text-4xl font-bold text-foreground mb-4">{product.name}</h1>
+                  <p className="text-sm text-muted-foreground mb-2 uppercase tracking-wide">
+                    {product.category}
+                  </p>
+                  <h1 className="text-4xl font-bold text-foreground mb-4">
+                    {product.name}
+                  </h1>
                 </div>
                 <button
                   onClick={() => toggleFavorite(product.id)}
                   className={`p-3 rounded-full transition-all duration-300 hover:scale-110 ${
-                    isProductFavorite ? "bg-accent text-primary" : "bg-muted text-foreground"
+                    isProductFavorite
+                      ? "bg-accent text-primary"
+                      : "bg-muted text-foreground"
                   }`}
                 >
-                  <Heart className={`w-6 h-6 ${isProductFavorite ? "fill-current" : ""}`} />
+                  <Heart
+                    className={`w-6 h-6 ${
+                      isProductFavorite ? "fill-current" : ""
+                    }`}
+                  />
                 </button>
               </div>
 
@@ -203,22 +240,36 @@ export default function ProductPage() {
                   {[...Array(5)].map((_, i) => (
                     <Star
                       key={i}
-                      className={`w-5 h-5 ${i < Math.floor(product.rating) ? "fill-accent text-accent" : "text-muted-foreground"}`}
+                      className={`w-5 h-5 ${
+                        i < Math.floor(product.rating)
+                          ? "fill-accent text-accent"
+                          : "text-muted-foreground"
+                      }`}
                     />
                   ))}
                 </div>
-                <span className="text-lg font-semibold text-foreground">{product.rating}</span>
-                <span className="text-muted-foreground">({product.reviews} reviews)</span>
+                <span className="text-lg font-semibold text-foreground">
+                  {product.rating}
+                </span>
+                <span className="text-muted-foreground">
+                  ({product.reviews} reviews)
+                </span>
               </div>
 
               <div className="flex items-baseline gap-4 mb-6">
-                <p className="text-4xl font-bold text-primary">${product.price}</p>
+                <p className="text-4xl font-bold text-primary">
+                  ${product.price}
+                </p>
                 {product.originalPrice > product.price && (
-                  <p className="text-xl text-muted-foreground line-through">${product.originalPrice}</p>
+                  <p className="text-xl text-muted-foreground line-through">
+                    ${product.originalPrice}
+                  </p>
                 )}
               </div>
 
-              <p className="text-muted-foreground text-lg mb-4 leading-relaxed">{product.description}</p>
+              <p className="text-muted-foreground text-lg mb-4 leading-relaxed">
+                {product.description}
+              </p>
 
               {product.inStock ? (
                 <div className="flex items-center gap-2 text-green-600 font-semibold mb-8">
@@ -251,7 +302,9 @@ export default function ProductPage() {
                     +
                   </button>
                 </div>
-                <span className="text-muted-foreground">({quantity} available)</span>
+                <span className="text-muted-foreground">
+                  ({quantity} available)
+                </span>
               </div>
 
               <div className="space-y-3">
@@ -295,8 +348,13 @@ export default function ProductPage() {
         </div>
 
         {/* Specifications */}
-        <div className="mb-16 animate-fadeInUp" style={{ animationDelay: "0.2s" }}>
-          <h2 className="text-3xl font-bold text-foreground mb-6">Specifications</h2>
+        <div
+          className="mb-16 animate-fadeInUp"
+          style={{ animationDelay: "0.2s" }}
+        >
+          <h2 className="text-3xl font-bold text-foreground mb-6">
+            Specifications
+          </h2>
           <Card className="border border-border p-8">
             <div className="grid md:grid-cols-2 gap-6">
               {Object.entries(product.specs).map(([key, value]) => (
@@ -304,8 +362,12 @@ export default function ProductPage() {
                   key={key}
                   className="flex justify-between items-center pb-4 border-b border-border last:border-b-0"
                 >
-                  <span className="text-muted-foreground font-semibold">{key}</span>
-                  <span className="text-foreground font-semibold">{value}</span>
+                  <span className="text-muted-foreground font-semibold">
+                    {key}
+                  </span>
+                  <span className="text-foreground font-semibold">
+                    {String(value)}
+                  </span>
                 </div>
               ))}
             </div>
@@ -313,38 +375,51 @@ export default function ProductPage() {
         </div>
 
         {/* Description */}
-        <div className="mb-16 animate-fadeInUp" style={{ animationDelay: "0.3s" }}>
-          <h2 className="text-3xl font-bold text-foreground mb-6">Product Details</h2>
+        <div
+          className="mb-16 animate-fadeInUp"
+          style={{ animationDelay: "0.3s" }}
+        >
+          <h2 className="text-3xl font-bold text-foreground mb-6">
+            Product Details
+          </h2>
           <Card className="border border-border p-8 bg-card">
-            <p className="text-foreground text-lg leading-relaxed whitespace-pre-line">{product.longDescription}</p>
+            <p className="text-foreground text-lg leading-relaxed whitespace-pre-line">
+              {product.longDescription}
+            </p>
           </Card>
         </div>
 
         {/* Related Products */}
         <div className="animate-fadeInUp" style={{ animationDelay: "0.4s" }}>
-          <h2 className="text-3xl font-bold text-foreground mb-8">You May Also Like</h2>
+          <h2 className="text-3xl font-bold text-foreground mb-8">
+            You May Also Like
+          </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {product.relatedProducts.map((relatedId, idx) => {
-              const relatedProduct = products[String(relatedId)]
-              if (!relatedProduct) return null
+              const relatedProduct = products[String(relatedId)];
+              if (!relatedProduct) return null;
               return (
                 <Link key={relatedId} href={`/product/${relatedId}`}>
                   <Card className="overflow-hidden hover:shadow-2xl transition-all duration-500 border-0 group cursor-pointer h-full flex flex-col">
                     <div className="relative aspect-square overflow-hidden bg-muted">
                       <div
                         className="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-500"
-                        style={{ backgroundImage: `url('${relatedProduct.image}')` }}
+                        style={{
+                          backgroundImage: `url('${relatedProduct.image}')`,
+                        }}
                       />
                     </div>
                     <div className="flex flex-col flex-1 p-5 bg-card">
                       <h3 className="font-semibold text-foreground mb-3 line-clamp-2 group-hover:text-accent transition-colors">
                         {relatedProduct.name}
                       </h3>
-                      <p className="text-2xl font-bold text-primary mt-auto">${relatedProduct.price}</p>
+                      <p className="text-2xl font-bold text-primary mt-auto">
+                        ${relatedProduct.price}
+                      </p>
                     </div>
                   </Card>
                 </Link>
-              )
+              );
             })}
           </div>
         </div>
@@ -352,5 +427,5 @@ export default function ProductPage() {
 
       <Footer />
     </div>
-  )
+  );
 }
