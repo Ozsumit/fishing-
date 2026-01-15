@@ -1,0 +1,846 @@
+[
+  {
+    "id": 1,
+    "name": "Shimano Twin Power Reel",
+    "price": 289.99,
+    "category": "reels",
+    "type": "Baitcaster",
+    "rating": 4.8,
+    "reviews": 42,
+    "image": "/shimano-fishing-reel.jpg",
+    "badge": "New",
+    "description": "Professional-grade baitcaster reel with twin power technology for maximum strength and reliability.",
+    "specs": {
+      "gear_ratio": "6.3:1",
+      "max_drag": "15lbs",
+      "capacity": "250yds/20lb",
+      "weight": "7.4oz"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Premium Graphite Rod",
+    "price": 199.99,
+    "category": "rods",
+    "type": "Spinning",
+    "rating": 4.6,
+    "reviews": 28,
+    "image": "/fishing-rod-graphite.jpg",
+    "badge": "Popular",
+    "description": "Lightweight graphite construction for superior sensitivity and control.",
+    "specs": {
+      "length": "6'6\"",
+      "power": "Medium",
+      "action": "Fast",
+      "material": "Graphite"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Braided Fishing Line 300m",
+    "price": 34.99,
+    "category": "lines",
+    "rating": 4.7,
+    "reviews": 156,
+    "image": "/braided-fishing-line.jpg",
+    "description": "High-strength braided line for superior knot strength and durability.",
+    "specs": {
+      "length": "300m",
+      "test": "20lb",
+      "type": "Braided",
+      "color": "Green"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Assorted Lure Set",
+    "price": 49.99,
+    "category": "lures",
+    "type": "Crankbait",
+    "rating": 4.5,
+    "reviews": 89,
+    "image": "/fishing-lure-set.jpg",
+    "badge": "Sale",
+    "description": "Variety pack of proven lures for multiple fish species.",
+    "specs": {
+      "count": "20 pieces",
+      "types": "Mixed",
+      "depth": "Variable",
+      "colors": "Assorted"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Digital Fish Finder",
+    "price": 149.99,
+    "category": "accessories",
+    "rating": 4.9,
+    "reviews": 112,
+    "image": "/fish-finder-device.jpg",
+    "description": "Advanced sonar technology to locate fish depths and positions.",
+    "specs": {
+      "frequency": "192khz",
+      "depth": "Up to 700ft",
+      "display": "3.5\" Color",
+      "gps": "Yes"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Premium Tackle Backpack",
+    "price": 89.99,
+    "category": "accessories",
+    "rating": 4.6,
+    "reviews": 67,
+    "image": "/fishing-backpack-tactical.jpg",
+    "description": "Durable waterproof backpack with organized compartments for all your gear.",
+    "specs": {
+      "material": "Nylon",
+      "capacity": "45L",
+      "waterproof": "Yes",
+      "pockets": "15+"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Carbon Fiber Lightweight Rod",
+    "price": 249.99,
+    "category": "rods",
+    "type": "Casting",
+    "rating": 4.7,
+    "reviews": 35,
+    "image": "/fishing-rod-graphite.jpg",
+    "description": "Ultra-lightweight carbon fiber rod for extended fishing sessions.",
+    "specs": {
+      "length": "7'0\"",
+      "power": "Medium-Heavy",
+      "action": "Moderate Fast",
+      "material": "Carbon Fiber"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Abu Garcia Reel Pro",
+    "price": 199.99,
+    "category": "reels",
+    "type": "Spinning",
+    "rating": 4.4,
+    "reviews": 22,
+    "image": "/shimano-fishing-reel.jpg",
+    "description": "Smooth spinning reel with high-speed performance for saltwater fishing.",
+    "specs": {
+      "gear_ratio": "5.8:1",
+      "max_drag": "25lbs",
+      "capacity": "300yds/20lb",
+      "weight": "8.2oz"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Shimano Spinning Reel FB-2500",
+    "price": 165.23,
+    "category": "reels",
+    "type": "Spinning",
+    "rating": 4.7,
+    "reviews": 156,
+    "image": "/shimano-fishing-reel.jpg",
+    "description": "Reliable spinning reel with smooth drag system.",
+    "specs": {
+      "gear_ratio": "5.7:1",
+      "max_drag": "20lbs",
+      "capacity": "250yds/20lb",
+      "weight": "7.8oz"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Shimano Baitcaster SVS 300",
+    "price": 288.37,
+    "category": "reels",
+    "type": "Baitcaster",
+    "rating": 4.6,
+    "reviews": 98,
+    "image": "/shimano-fishing-reel.jpg",
+    "description": "Heavy-duty baitcaster for saltwater and freshwater fishing.",
+    "specs": {
+      "gear_ratio": "6.4:1",
+      "max_drag": "30lbs",
+      "capacity": "300yds/30lb",
+      "weight": "8.5oz"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Shimano Bass Spinnning Reel",
+    "price": 219.62,
+    "category": "reels",
+    "type": "Spinning",
+    "rating": 4.8,
+    "reviews": 145,
+    "image": "/shimano-fishing-reel.jpg",
+    "description": "Specialized spinning reel for bass fishing with precision drag.",
+    "specs": {
+      "gear_ratio": "6.2:1",
+      "max_drag": "18lbs",
+      "capacity": "220yds/20lb",
+      "weight": "7.5oz"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Shimano Saltwater Baitcaster",
+    "price": 350.99,
+    "category": "reels",
+    "type": "Baitcaster",
+    "rating": 4.9,
+    "reviews": 189,
+    "image": "/shimano-fishing-reel.jpg",
+    "description": "Premium saltwater baitcaster with corrosion-resistant coating.",
+    "specs": {
+      "gear_ratio": "6.8:1",
+      "max_drag": "40lbs",
+      "capacity": "400yds/40lb",
+      "weight": "9.2oz"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Premium Spinning Rod 6ft",
+    "price": 89.74,
+    "category": "rods",
+    "type": "Spinning",
+    "rating": 4.5,
+    "reviews": 67,
+    "image": "/fishing-rod-graphite.jpg",
+    "description": "Versatile spinning rod for freshwater and light saltwater fishing.",
+    "specs": {
+      "length": "6'0\"",
+      "power": "Light",
+      "action": "Fast",
+      "material": "Fiberglass"
+    }
+  },
+  {
+    "id": 14,
+    "name": "Casting Rod Professional Series",
+    "price": 175.45,
+    "category": "rods",
+    "type": "Casting",
+    "rating": 4.6,
+    "reviews": 112,
+    "image": "/fishing-rod-graphite.jpg",
+    "description": "Professional casting rod with enhanced sensitivity for precise control.",
+    "specs": {
+      "length": "6'6\"",
+      "power": "Medium",
+      "action": "Moderate",
+      "material": "Graphite"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Shimano Spinning Reel FE 2500 Spinning Reel",
+    "price": 905.23,
+    "category": "reels",
+    "type": "Spinning",
+    "rating": 4.7,
+    "reviews": 203,
+    "image": "/shimano-fishing-reel.jpg",
+    "description": "High-performance spinning reel with advanced drag technology.",
+    "specs": {
+      "gear_ratio": "5.9:1",
+      "max_drag": "22lbs",
+      "capacity": "280yds/20lb",
+      "weight": "8.0oz"
+    }
+  },
+  {
+    "id": 16,
+    "name": "Shimano Tagra Reel Spinning Reel",
+    "price": 905.23,
+    "category": "reels",
+    "type": "Spinning",
+    "rating": 4.5,
+    "reviews": 87,
+    "image": "/shimano-fishing-reel.jpg",
+    "description": "Tournament-grade spinning reel for competitive fishing.",
+    "specs": {
+      "gear_ratio": "6.0:1",
+      "max_drag": "24lbs",
+      "capacity": "300yds/20lb",
+      "weight": "8.1oz"
+    }
+  },
+  {
+    "id": 17,
+    "name": "Assorted Crankbait Pack",
+    "price": 59.74,
+    "category": "lures",
+    "type": "Crankbait",
+    "rating": 4.6,
+    "reviews": 124,
+    "image": "/fishing-lure-set.jpg",
+    "description": "Professional crankbait collection for bass and pike fishing.",
+    "specs": {
+      "count": "15 pieces",
+      "types": "Crankbait",
+      "depth": "5-12ft",
+      "colors": "Natural & Bright"
+    }
+  },
+  {
+    "id": 18,
+    "name": "Yoyo Garfish Jigging Lures",
+    "price": 9.74,
+    "category": "lures",
+    "type": "Casting",
+    "rating": 4.7,
+    "reviews": 298,
+    "image": "/fishing-lure-set.jpg",
+    "description": "Premium jigging lures for saltwater fishing.",
+    "specs": {
+      "count": "3 pieces",
+      "types": "Jigging",
+      "weight": "150-200g",
+      "colors": "Assorted"
+    }
+  },
+  {
+    "id": 19,
+    "name": "YoYo GarFish Shrimp Lures",
+    "price": 169.68,
+    "category": "lures",
+    "type": "Casting",
+    "rating": 4.5,
+    "reviews": 156,
+    "image": "/fishing-lure-set.jpg",
+    "description": "Realistic shrimp imitation lures for saltwater gamefish.",
+    "specs": {
+      "count": "6 pieces",
+      "types": "Shrimp Imitation",
+      "depth": "Varied",
+      "colors": "Natural"
+    }
+  },
+  {
+    "id": 20,
+    "name": "Shimano 2025 Spinning Reel",
+    "price": 1102.23,
+    "category": "reels",
+    "type": "Spinning",
+    "rating": 4.9,
+    "reviews": 412,
+    "image": "/shimano-fishing-reel.jpg",
+    "badge": "New",
+    "description": "Latest 2025 model spinning reel with cutting-edge technology.",
+    "specs": {
+      "gear_ratio": "6.3:1",
+      "max_drag": "26lbs",
+      "capacity": "320yds/20lb",
+      "weight": "8.3oz"
+    }
+  },
+  {
+    "id": 21,
+    "name": "Coastal Surf Casting Rod",
+    "price": 145.5,
+    "category": "rods",
+    "type": "Surf",
+    "rating": 4.5,
+    "reviews": 56,
+    "image": "/surf-rod-heavy.jpg",
+    "description": "Heavy-duty surf rod designed for long-distance casting from the beach.",
+    "specs": {
+      "length": "10'0\"",
+      "power": "Heavy",
+      "action": "Fast",
+      "material": "High Modulus Carbon"
+    }
+  },
+  {
+    "id": 22,
+    "name": "StreamLine Fly Reel",
+    "price": 89.99,
+    "category": "reels",
+    "type": "Fly",
+    "rating": 4.8,
+    "reviews": 34,
+    "image": "/fly-fishing-reel.jpg",
+    "badge": "Best Seller",
+    "description": "Precision-machined aluminum fly reel with adjustable disc drag.",
+    "specs": {
+      "weight_class": "5/6wt",
+      "arbor": "Large",
+      "drag": "Disc",
+      "material": "Aluminum"
+    }
+  },
+  {
+    "id": 23,
+    "name": "Polarized Fishing Sunglasses",
+    "price": 45.99,
+    "category": "apparel",
+    "rating": 4.6,
+    "reviews": 210,
+    "image": "/fishing-sunglasses.jpg",
+    "description": "High-contrast polarized lenses to reduce glare and spot fish underwater.",
+    "specs": {
+      "lens": "Polarized UV400",
+      "frame": "Polycarbonate",
+      "color": "Amber",
+      "strap": "Included"
+    }
+  },
+  {
+    "id": 24,
+    "name": "Soft Plastic Worm Kit",
+    "price": 12.99,
+    "category": "lures",
+    "type": "Soft Plastic",
+    "rating": 4.9,
+    "reviews": 500,
+    "image": "/soft-plastic-worms.jpg",
+    "description": "Classic senko-style worms for bass fishing in various water conditions.",
+    "specs": {
+      "count": "30 pieces",
+      "length": "5 inches",
+      "scent": "Garlic",
+      "colors": "Pumpkin/Watermelon"
+    }
+  },
+  {
+    "id": 25,
+    "name": "Breathable Chest Waders",
+    "price": 159.95,
+    "category": "apparel",
+    "rating": 4.7,
+    "reviews": 88,
+    "image": "/fishing-waders.jpg",
+    "description": "Waterproof and breathable chest waders with neoprene stocking feet.",
+    "specs": {
+      "material": "3-Layer Nylon",
+      "pocket": "Chest Zipper",
+      "belt": "Included",
+      "waterproof_rating": "20000mm"
+    }
+  },
+  {
+    "id": 26,
+    "name": "Fluorocarbon Leader Line",
+    "price": 18.5,
+    "category": "lines",
+    "type": "Fluorocarbon",
+    "rating": 4.8,
+    "reviews": 120,
+    "image": "/fluoro-leader.jpg",
+    "description": "Invisible leader line with high abrasion resistance.",
+    "specs": {
+      "length": "50yds",
+      "test": "15lb",
+      "visibility": "Invisible",
+      "material": "100% Fluorocarbon"
+    }
+  },
+  {
+    "id": 27,
+    "name": "Portable Digital Scale",
+    "price": 24.99,
+    "category": "accessories",
+    "rating": 4.4,
+    "reviews": 315,
+    "image": "/digital-fish-scale.jpg",
+    "description": "Accurate digital hanging scale with measuring tape.",
+    "specs": {
+      "max_weight": "110lbs",
+      "units": "lb/kg/oz",
+      "tape_measure": "3ft",
+      "battery": "AAA"
+    }
+  },
+  {
+    "id": 28,
+    "name": "Telescopic Travel Rod",
+    "price": 55.0,
+    "category": "rods",
+    "type": "Spinning",
+    "rating": 4.2,
+    "reviews": 90,
+    "image": "/telescopic-rod.jpg",
+    "badge": "Travel Ready",
+    "description": "Collapsible fishing rod perfect for hiking and travel.",
+    "specs": {
+      "extended_length": "7'0\"",
+      "collapsed_length": "16\"",
+      "sections": "6",
+      "case": "Included"
+    }
+  },
+  {
+    "id": 29,
+    "name": "Hollow Body Frog Lure",
+    "price": 8.99,
+    "category": "lures",
+    "type": "Topwater",
+    "rating": 4.8,
+    "reviews": 175,
+    "image": "/frog-lure.jpg",
+    "description": "Weedless topwater frog for fishing over lily pads and heavy cover.",
+    "specs": {
+      "weight": "1/2oz",
+      "hooks": "Double 4/0",
+      "action": "Walking",
+      "body": "Soft Hollow"
+    }
+  },
+  {
+    "id": 30,
+    "name": "Floating Landing Net",
+    "price": 32.5,
+    "category": "accessories",
+    "rating": 4.7,
+    "reviews": 60,
+    "image": "/landing-net.jpg",
+    "description": "Rubberized mesh net that floats if dropped in the water.",
+    "specs": {
+      "hoop_size": "18x15\"",
+      "handle": "Short",
+      "mesh": "Rubber",
+      "buoyant": "Yes"
+    }
+  },
+  {
+    "id": 31,
+    "name": "Deep Sea Electric Reel",
+    "price": 599.0,
+    "category": "reels",
+    "type": "Electric",
+    "rating": 4.9,
+    "reviews": 15,
+    "image": "/electric-reel.jpg",
+    "badge": "Premium",
+    "description": "High-power electric reel for deep dropping and heavy loads.",
+    "specs": {
+      "voltage": "12V DC",
+      "max_drag": "55lbs",
+      "winding_speed": "160m/min",
+      "counter": "Digital Depth"
+    }
+  },
+  {
+    "id": 32,
+    "name": "3-Tray Tackle Box",
+    "price": 29.99,
+    "category": "storage",
+    "rating": 4.5,
+    "reviews": 400,
+    "image": "/tackle-box.jpg",
+    "description": "Classic cantilever style tackle box with three trays for organization.",
+    "specs": {
+      "trays": "3",
+      "material": "High-Impact Plastic",
+      "latch": "Brass Bailed",
+      "dimensions": "16x9x8\""
+    }
+  },
+  {
+    "id": 33,
+    "name": "Flashy Willow Spinnerbait",
+    "price": 6.99,
+    "category": "lures",
+    "type": "Spinnerbait",
+    "rating": 4.6,
+    "reviews": 85,
+    "image": "/spinnerbait.jpg",
+    "description": "Double willow blade spinnerbait for aggressive reaction strikes.",
+    "specs": {
+      "weight": "3/8oz",
+      "blades": "Gold/Silver",
+      "skirt": "Silicone",
+      "hook": "Single"
+    }
+  },
+  {
+    "id": 34,
+    "name": "Ice Fishing Combo",
+    "price": 49.99,
+    "category": "rods",
+    "type": "Ice",
+    "rating": 4.4,
+    "reviews": 55,
+    "image": "/ice-fishing-rod.jpg",
+    "description": "Sensitive solid carbon rod paired with an inline reel for ice fishing.",
+    "specs": {
+      "length": "28\"",
+      "power": "Light",
+      "reel_type": "Inline",
+      "handle": "Cork"
+    }
+  },
+  {
+    "id": 35,
+    "name": "Titanium Fishing Pliers",
+    "price": 39.99,
+    "category": "accessories",
+    "rating": 4.8,
+    "reviews": 122,
+    "image": "/fishing-pliers.jpg",
+    "description": "Corrosion-resistant pliers with braid cutters and split ring opener.",
+    "specs": {
+      "material": "Aluminum/Titanium",
+      "length": "7 inches",
+      "sheath": "Included",
+      "lanyard": "Coiled"
+    }
+  },
+  {
+    "id": 36,
+    "name": "Trolling Motor 55lb Thrust",
+    "price": 249.0,
+    "category": "electronics",
+    "rating": 4.6,
+    "reviews": 78,
+    "image": "/trolling-motor.jpg",
+    "badge": "Sale",
+    "description": "Transom mount trolling motor for freshwater boats and kayaks.",
+    "specs": {
+      "thrust": "55lbs",
+      "voltage": "12V",
+      "shaft": "36 inches",
+      "speeds": "5 Fwd / 3 Rev"
+    }
+  },
+  {
+    "id": 37,
+    "name": "UV Protection Hoodie",
+    "price": 34.5,
+    "category": "apparel",
+    "rating": 4.7,
+    "reviews": 150,
+    "image": "/fishing-hoodie.jpg",
+    "description": "Lightweight UPF 50+ performance shirt for sun protection.",
+    "specs": {
+      "material": "Polyester Spandex",
+      "upf": "50+",
+      "drying": "Quick Dry",
+      "sleeve": "Long"
+    }
+  },
+  {
+    "id": 38,
+    "name": "Classic Casting Spoon",
+    "price": 5.99,
+    "category": "lures",
+    "type": "Spoon",
+    "rating": 4.5,
+    "reviews": 310,
+    "image": "/spoon-lure.jpg",
+    "description": "Wobbling metal spoon effective for pike, trout, and salmon.",
+    "specs": {
+      "weight": "3/4oz",
+      "finish": "Hammered Gold",
+      "hook": "Treble",
+      "length": "3 inches"
+    }
+  },
+  {
+    "id": 39,
+    "name": "Bulk Monofilament Spool",
+    "price": 14.99,
+    "category": "lines",
+    "type": "Monofilament",
+    "rating": 4.3,
+    "reviews": 205,
+    "image": "/mono-line.jpg",
+    "description": "Economy spool of versatile monofilament line.",
+    "specs": {
+      "length": "1000yds",
+      "test": "10lb",
+      "color": "Clear",
+      "memory": "Low"
+    }
+  },
+  {
+    "id": 40,
+    "name": "Adjustable Rod Holder",
+    "price": 22.0,
+    "category": "accessories",
+    "rating": 4.4,
+    "reviews": 95,
+    "image": "/rod-holder.jpg",
+    "description": "Heavy-duty rod holder with 360-degree rotation for boats.",
+    "specs": {
+      "mount": "Clamp-on",
+      "material": "ABS Plastic",
+      "adjustment": "360 degree",
+      "compatibility": "Spinning/Casting"
+    }
+  },
+  {
+    "id": 41,
+    "name": "Beginner Spincast Reel",
+    "price": 29.99,
+    "category": "reels",
+    "type": "Spincast",
+    "rating": 4.2,
+    "reviews": 350,
+    "image": "/spincast-reel.jpg",
+    "description": "Push-button casting reel ideal for children and beginners.",
+    "specs": {
+      "gear_ratio": "3.3:1",
+      "pre_spooled": "Yes (10lb)",
+      "bearings": "2",
+      "weight": "6oz"
+    }
+  },
+  {
+    "id": 42,
+    "name": "Tenkara Fly Rod Kit",
+    "price": 115.0,
+    "category": "rods",
+    "type": "Fly",
+    "rating": 4.7,
+    "reviews": 45,
+    "image": "/tenkara-rod.jpg",
+    "description": "Complete Japanese style telescopic fly fishing kit (no reel needed).",
+    "specs": {
+      "length": "12ft",
+      "segments": "9",
+      "action": "6:4",
+      "kit_includes": "Line, Flies, Case"
+    }
+  },
+  {
+    "id": 43,
+    "name": "Glow Squid Jig",
+    "price": 7.5,
+    "category": "lures",
+    "type": "Jig",
+    "rating": 4.6,
+    "reviews": 68,
+    "image": "/squid-jig.jpg",
+    "description": "Luminescent jig designed specifically for catching squid.",
+    "specs": {
+      "size": "3.5",
+      "hooks": "Dual Crown",
+      "feature": "Glow in Dark",
+      "weight": "20g"
+    }
+  },
+  {
+    "id": 44,
+    "name": "Aerated Bait Cooler",
+    "price": 42.99,
+    "category": "storage",
+    "rating": 4.5,
+    "reviews": 110,
+    "image": "/bait-cooler.jpg",
+    "description": "Insulated cooler with battery-powered aerator to keep live bait fresh.",
+    "specs": {
+      "capacity": "10L",
+      "insulation": "Foam",
+      "pump_power": "2x D Batteries",
+      "strap": "Shoulder"
+    }
+  },
+  {
+    "id": 45,
+    "name": "Fillet Knife Set",
+    "price": 36.5,
+    "category": "accessories",
+    "rating": 4.7,
+    "reviews": 190,
+    "image": "/fillet-knife.jpg",
+    "description": "Set of 3 stainless steel fillet knives with non-slip grips.",
+    "specs": {
+      "sizes": "5\", 7\", 9\"",
+      "steel": "German Stainless",
+      "flex": "Medium",
+      "sharpener": "Included"
+    }
+  },
+  {
+    "id": 46,
+    "name": "Noisy Buzzbait",
+    "price": 5.5,
+    "category": "lures",
+    "type": "Topwater",
+    "rating": 4.4,
+    "reviews": 72,
+    "image": "/buzzbait.jpg",
+    "description": "Surface lure that creates a loud buzzing noise to attract bass.",
+    "specs": {
+      "weight": "1/2oz",
+      "prop": "Aluminum",
+      "skirt": "Chartreuse",
+      "hook": "Single"
+    }
+  },
+  {
+    "id": 47,
+    "name": "Waterproof Headlamp",
+    "price": 28.0,
+    "category": "electronics",
+    "rating": 4.8,
+    "reviews": 230,
+    "image": "/headlamp.jpg",
+    "badge": "Night Fishing",
+    "description": "Rechargeable LED headlamp with red light mode for night fishing.",
+    "specs": {
+      "lumens": "500",
+      "modes": "High/Low/Red/Strobe",
+      "waterproof": "IPX6",
+      "battery": "USB Rechargeable"
+    }
+  },
+  {
+    "id": 48,
+    "name": "Offshore Trolling Rod",
+    "price": 189.99,
+    "category": "rods",
+    "type": "Trolling",
+    "rating": 4.8,
+    "reviews": 40,
+    "image": "/trolling-rod.jpg",
+    "description": "Short, powerful rod with roller guides for big game fishing.",
+    "specs": {
+      "length": "5'6\"",
+      "line_class": "50-80lb",
+      "guides": "Roller",
+      "butt": "Aluminum Gimbal"
+    }
+  },
+  {
+    "id": 49,
+    "name": "Float Fishing Centerpin",
+    "price": 275.0,
+    "category": "reels",
+    "type": "Centerpin",
+    "rating": 4.7,
+    "reviews": 28,
+    "image": "/centerpin-reel.jpg",
+    "description": "Free-spooling reel for drift fishing in rivers.",
+    "specs": {
+      "diameter": "4.5 inches",
+      "bearings": "2 ABEC-5",
+      "drag": "None (Clicker)",
+      "machined": "Yes"
+    }
+  },
+  {
+    "id": 50,
+    "name": "Kayak Fishing Crate",
+    "price": 65.0,
+    "category": "storage",
+    "rating": 4.6,
+    "reviews": 82,
+    "image": "/kayak-crate.jpg",
+    "badge": "New",
+    "description": "Modular storage crate designed to fit in kayak tank wells.",
+    "specs": {
+      "rod_holders": "4 built-in",
+      "material": "Polyethylene",
+      "compatible": "Standard Milk Crate Size",
+      "lid": "Included"
+    }
+  }
+]
